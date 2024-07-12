@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Flight Price Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Price Prediction</h1>
+        <div class="form-group">
+            <label for="departure">Departure City:</label>
+            <select id="departure">
+                <!-- Add 30 Indian metropolitan areas -->
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Pune">Pune</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Indore">Indore</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Patna">Patna</option>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <!-- Foreign Cities -->
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+<option value="Beijing">Beijing</option>
+                <option value="Sydney">Sydney</option>
+                <option value="Melbourne">Melbourne</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Seoul">Seoul</option>
+                <option value="Shanghai">Shanghai</option>
+                <option value="Munich">Munich</option>
+                <option value="Rome">Rome</option>
+                <option value="Barcelona">Barcelona</option>
+                <!-- Add more cities as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="arrival">Arrival City:</label>
+            <select id="arrival">
+                <!-- Add 15 foreign metropolitan areas -->
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Sydney">Sydney</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Indore">Indore</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Patna">Patna</option>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <!-- Foreign Cities -->
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+<option value="Beijing">Beijing</option>
+                <option value="Sydney">Sydney</option>
+                <option value="Melbourne">Melbourne</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Seoul">Seoul</option>
+                <option value="Shanghai">Shanghai</option>
+                <option value="Munich">Munich</option>
+                <option value="Rome">Rome</option>
+                <option value="Barcelona">Barcelona</option>
+                <!-- Add more cities as needed -->
+            </select>
+        </div>
+        <button id="predict-button">Predict Price</button>
+        <div id="price-display"></div>
+    </div>
+
+    <!-- Booking popup -->
+    <div id="booking-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Book Your Flight</h2>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <button id="book-button">Book</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
